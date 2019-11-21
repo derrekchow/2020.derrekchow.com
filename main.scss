@@ -23,7 +23,7 @@ body {
 	}
 
 	.button {
-		transition: 0.5s $transition;
+		transition: 0.3s $transition;
 		border: 0;
 		border-radius: 0;
 		font-stretch: expanded;
@@ -50,11 +50,11 @@ nav {
 			margin: 1.5em 0;
 			font-size: 20px;
 			color: white;
+			font-weight: 400;
 			text-decoration: none;
 			font-stretch: expanded;
 		}
 		.active {
-			font-weight: 600;
 			border-bottom: 3px solid;
 		}
 	}
@@ -62,7 +62,7 @@ nav {
 
 #home {
 	color: $black;
-	
+
 	.flow_hover {
 		background-color: #0052CC;
 		color: white;
@@ -116,7 +116,7 @@ nav {
 	}
 
 	section {
-		transition: 0.8s $transition;
+		transition: 0.5s $transition;
 		padding: 10vh 25px;
 		opacity: 0.5;
 
@@ -133,17 +133,22 @@ nav {
 
 			a {
 				all: unset;
-				transition: opacity 0.5s $transition;
 				width: 45%;
 				@media (max-width: $tablet) {
 					width: 100%;
 					padding-bottom: 30px;
 				}
-				h5 {
-					font-weight: 400;
+				h2 {
 					margin-bottom: 0.2em;
 				}
+				h5 {
+					opacity: 0.8;
+					font-weight: 300;
+					margin-bottom: 0.2em;
+					font-stretch: normal;
+				}
 				p {
+					opacity: 0.8;
 					color: inherit;
 				}
 			}
@@ -182,7 +187,7 @@ nav {
 
 	.description {
 		font-size: 1.5em;
-		opacity: 0.5;
+		opacity: 0.7;
 		padding-bottom: 1em;
 	}
 

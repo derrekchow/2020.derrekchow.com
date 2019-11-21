@@ -132,7 +132,7 @@
 					$('section').each(function(e) {
 						elTop = $(this).offset().top;
 						elBtm = elTop + $(this).height();
-						if (elTop < scrollMiddle && elBtm > scrollMiddle - 200) {
+						if (elTop < scrollMiddle && elBtm > scrollMiddle - 300) {
 							$(this).addClass(this.id + '_hover');
 							$('#' + this.id + ' img').css('transform', 'rotateY(-10deg) rotateX(10deg) rotateZ(1deg) scale(1)');
 						} else {
