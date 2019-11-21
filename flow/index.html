@@ -1,0 +1,189 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+  	<head>
+<!--
+
+  _____                     _       _____ _                   
+ |  __ \                   | |     / ____| |                  
+ | |  | | ___ _ __ _ __ ___| | __ | |    | |__   _____      __
+ | |  | |/ _ \ '__| '__/ _ \ |/ / | |    | '_ \ / _ \ \ /\ / /
+ | |__| |  __/ |  | | |  __/   <  | |____| | | | (_) \ V  V / 
+ |_____/ \___|_|  |_|  \___|_|\_\  \_____|_| |_|\___/ \_/\_/  
+
+              ,\
+             \\\,_
+              \` ,\
+         __,.-" =__)
+       ."        )
+    ,_/   ,    \/\_
+    \_|    )_-\ \_-`
+       `-----` `--`
+                                                           
+-->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+		<link rel="manifest" href="../favicon/site.webmanifest">
+
+		<link rel="stylesheet"  type="text/css" href="../vendor/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="../vendor/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="../main.css" />
+
+		<meta name="title" content="UW Flow 2.0">
+		<meta name="keywords" content="Waterloo, UW, student, college, intern, university, Canadian, internship, intern, design intern, developer, software, designer, design, work, job, coop, co-op, uwaterloo, music, photos, food, derrek, chow, Derrek Chow, uw flow, flow, flow 2.0, uw 2.0, from the intercom, tedxuw, tedx, hack the north, derek, derek uwaterloo, derrek waterloo, derrek uwaterloo">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+
+		<meta property="og:title" content="UW Flow 2.0">
+		<meta property="og:url" content="https://derrekchow.com/flow">
+		<meta property="og:site_name" content="Derrek Chow">
+		<meta property="og:type" content="website">
+
+		<title>Derrek Chow - UW Flow 2.0</title>
+	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102564495-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-102564495-1');
+		</script>
+	</head>
+	<body class="article" id="flow">
+		<nav>
+			<span class="container">
+				<a href="../">Derrek Chow</a>
+				<a href="../more">More</a>
+			</span>
+		</nav>
+
+		<section class="container">
+			<h1>UW Flow 2.0</h1>
+			<div class="description">
+				Revamping a beloved platform for students to share course and professor reviews and plan their courses at the University of Waterloo (UW).
+			</div>
+		</section>
+		<section class="image">
+			<img src="../assets/projects/flow/landing.png" />
+		</section>
+		<section class="container">
+			<br/><br/>
+			<p>
+				UW Flow is a popular platform for UW students to share course and professor reviews. It was created in 2012 by a group of Software Engineering students. While the site remained a useful resource for students, it began to suffer over time from lack of maintenance. In 2019, a team of students and I decided to revamp UW Flow.
+				<br/><br/>
+				I was the designer for UW Flow 2.0 — my goal was to design a platform that would best cater to our current users. I worked in a team of 2 backend developers, 2 frontend developers, and a product manager.
+			</p>
+			<h5>User Research</h5>
+			<p>
+				I wanted to assess how our users were interacting with UW Flow and what they value in the platform.
+				<br/><br/>
+				I created an online survey and interviewed 15 students from various majors and backgrounds who had used UW Flow. The participants were our user base: students at the UW who use the platform.
+				<br/><br/>
+				<b>There were some specific, actionable requests:</b>
+				<ul>
+					<li>"When I start typing in the top bar right after page load, autocomplete doesn't happen, then I lose focus in the box, then when I click back in I get autocomplete."</li>
+					<li>"Filtering by subjects in course search."</li>
+					<li>"Site loading time could be improved."</li>
+					<li>"General clean up. eg. I tried the mobile app a while ago and I didn't find it very functional, all profs have email/phone/office "coming soon", etc."</li>
+					<li>"I don't know if there's a way to do this, but if a section is full, have the ability to notify me if a spot becomes available?"</li>
+				</ul>
+				<b>But also some more general valuable insights, especially from the user interviews:</b>
+				<br/><br/>
+				<ul>
+					<li>"I like how [Flow] is a lot easier to navigate than the university website and it gives you access to all of the information you need."</li>
+					<li>"Hardest part of picking a course is the long term planning involved like making sure your schedule is aligned with your future academic trajectory."</li>
+					<li>"I like how candid the reviews are."</li>
+				</ul>
+				From this research, I found that users greatly value the convenience and honesty of UW Flow and its reviews. Students use the platform to determine whether to take a course or not based on various criteria (professors, reviews, availability, access to future courses, etc...). I set out to create a design that would further this purpose.
+			</p>
+			<h5>Wireframes and Prototype</h5>
+			<p>
+				I created wireframes that focused on clearly showing the relationships between reviews of courses and professors as well as indicating the context of a review.
+				<br/></br/>
+				I then connected the wireframes to form a functional prototype that we could use as a reference when planning our backend architecture and defining our data models.
+			</p>
+		</section>
+		<section class="image">
+			<h4 style="color: white; margin-bottom: 1.5em;">Prototype</h4>
+			<img src="../assets/projects/flow/prototype.gif" />
+			<h4 style="color: white; margin-top: 3em; margin-bottom: 1.5em;">Wireframes</h4>
+			<img src="../assets/projects/flow/wireframes.png" />
+		</section>
+		<section class="container">
+			<h5>Design</h5>
+			<p>
+				I focused on a clear and simple design that would allow our information (course and professor reviews) to take center stage. Below are some guidelines I created to define the UW Flow design: colors, typography, a style guide, components, and illustrations. I used <a href="https://www.atlassian.design/server/foundations/colors/" target="_blank">Atlassian Colors</a> and <a href="https://feathericons.com/" target="_blank">Feather Icons</a> in the design. These guidelines would later be used to create mockups.
+			</p>
+			<img class="inline-img" src="../assets/projects/flow/style.png" />
+			<h5>Symbols and Illustrations</h5>
+			<p>
+				Flow is centred around reviews for 2 entities: courses and professors. I used orange to represent a course and green to represent a professor — I made these symbolic colours consistent across the design.
+				<br/><br/>
+				The illustrations I created represent a user's path to their ideal course through UW Flow. Their purpose was to further distinguish the different entities and pages of the site as well as create a distinct brand for Flow.
+			</p>
+			<img class="inline-img" src="../assets/projects/flow/illustrations.png" />
+		</section>
+		<section class="container">
+			<h5>Mockups</h5>
+			<p>
+				I created mockups for the 7 pages of the platform: the Landing, Explore, Privacy, About, Course, Professor, and User pages as well as several miscellaneous components such as login modals, transcript and schedule upload, review modal, and search bar.
+				<br/><br/>
+				A design I will highlight is the new explore page. Users can search the different courses/professors offered at the UW through various filtering and sorting criteria. I determined this based on our user research of what students said they cared about when looking for a course/professor (eg: if a course is offered in their term or the year of the course).
+			</p>
+		</section>
+		<section class="image">
+			<img src="../assets/projects/flow/full.png" />
+		</section>
+		<section class="container">
+			<h5>Mobile</h5>
+			<p>
+				It was important the design support mobile devices since <b>21.92%</b> of our site sessions came from mobile devices. I chose a responsive mobile design for consistency as well as development efficiency so the frontend team could reuse the components they built for desktop.
+			</p>
+			<img class="inline-img" src="../assets/projects/flow/mobile.png" />
+		</section>
+		<section class="container">
+			<h5>Development</h5>
+			<p>
+				We began development shortly after I created the mockups with React, whose paradigm lent itself well to my component-based design. I created user flows during our QA testing phase to catch any bugs or design flaws.
+				<br/><br/>
+				Below is a summary of 10 months of work comprised of 2-week sprints, and below it the result:
+			</p>
+			<img class="inline-img" src="../assets/projects/flow/dev.png" />
+		</section>
+		<section class="container">
+			<h5>Learnings</h5>
+			<p>
+				<h6>Keep it simple</h6>
+				I found adding more features does not always make the product better, in fact, they can detract and obscure its primary purpose. It is important to show restraint when designing to avoid feature creep and maintain the overall value to users.
+				<br/><br/>
+				During development, we found ourselves being pulled to do more — this road would lead to a Flow that does many things okay at the cost of doing a few things very well.
+				<br/><br/>
+				<h6>Just do it</h6>
+				I was initially daunted by the variety of design work in the project, ranging from research, information architecture, user journeys, to illustrations. In particular, I had no experience illustrations before and felt incapable of the task. I tried to hire an external illustrator but eventually realized tha
+				<br/>
+			</p>
+			<h5>Thanks</h5>
+			<p>
+				This project was very eye-opening for me in learning about the design and product development process. The 10 months of creating UW Flow 2.0 were not only deeply rewarding but also fun thanks to an incredibly talented group of teammates. Thank you:
+				<ul style="opacity: 1">
+					<li><b>Ayush Kapur</b> - Product manager</li>
+					<li><b>Bob Wei</b> - Backend developer</li>
+					<li><b>Dmytro Shynkevych</b> - Backend developer</li>
+					<li><b>Edwin Zhang</b> - Frontend developer</li>
+					<li><b>Max Dai</b> - Frontend developer</li>
+				</ul>
+			</p>
+			<img class="inline-img" src="../assets/projects/flow/fti.png" />
+		</section>
+	</body>
+	
+</html>

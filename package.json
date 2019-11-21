@@ -1,0 +1,19 @@
+{
+  "name": "derrekchow.com",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "run": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derrek Chow",
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

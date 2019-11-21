@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+<!--
+
+  _____                     _       _____ _                   
+ |  __ \                   | |     / ____| |                  
+ | |  | | ___ _ __ _ __ ___| | __ | |    | |__   _____      __
+ | |  | |/ _ \ '__| '__/ _ \ |/ / | |    | '_ \ / _ \ \ /\ / /
+ | |__| |  __/ |  | | |  __/   <  | |____| | | | (_) \ V  V / 
+ |_____/ \___|_|  |_|  \___|_|\_\  \_____|_| |_|\___/ \_/\_/  
+
+       .
+      ":"
+    ___:____     |"\/"|
+  ,'        `.    \  /
+  |  O        \___/  |
+~^~^~^~^~^~^~^~^~^~^~^~^~
+                                                                               
+-->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+		<link rel="manifest" href="./favicon/site.webmanifest">
+
+		<link rel="stylesheet"  type="text/css" href="./vendor/normalize.min.css" />
+		<link rel="stylesheet" type="text/css" href="./vendor/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="./main.css" />
+
+		<meta name="title" content="Derrek Chow">
+		<meta name="keywords" content="Waterloo, UW, student, college, intern, university, Canadian, internship, intern, design intern, developer, software, designer, design, work, job, coop, co-op, uwaterloo, music, photos, food, derrek, chow, Derrek Chow, uw flow, flow, flow 2.0, uw 2.0, from the intercom, tedxuw, tedx, hack the north, derek, derek uwaterloo, derrek waterloo, derrek uwaterloo">		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+
+		<meta property="og:title" content="Derrek Chow">
+		<meta property="og:url" content="https://derrekchow.com/">
+		<meta property="og:site_name" content="Derrek Chow">
+		<meta property="og:type" content="website">
+
+		<title>Derrek Chow</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script src="./script.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102564495-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-102564495-1');
+		</script>
+	</head>
+	<body id="home" >
+		<nav>
+			<span class="container">
+				<a class="active" href="./">Derrek Chow</a>
+				<a href="./more">More</a>
+			</span>
+		</nav>
+
+		<section id="flow" class="flow_hover">
+			<span class="container">
+				<a href="./flow">
+					<h2>UW Flow 2.0</h2>
+					<h5>Designer and Developer</h5>
+					<p>Improving the way university students review courses and professors</p>
+					<div class="button">Read the case study</div>
+				</a>
+				<img src="./assets/projects/flow/main.png" style="box-shadow: none" />
+			</span>
+		</section>
+
+		<section id="fti">
+			<span class="container">
+				<a href="./fti">
+					<h2>From the Intercom</h2>
+					<h5>Designer</h5>
+					<p>Championing Asian/Anglo-Asian art in entertainment</p>
+					<div class="button">Learn more</div>
+				</a>
+				<img src="./assets/projects/fti.png"/>
+			</span>
+		</section>
+
+		<section id="impact">
+			<span class="container">
+				<a href="https://www.impactlabs.io/" target="_blank">
+					<h2>Impact Labs</h2>
+					<h5>Dev Team Lead</h5>
+					<p>Inspiring and empowering ambitious computer scientists to build a better world</p>
+					<div class="button">Visit impactlabs.io</div>
+				</a>
+				<img src="./assets/projects/impact_labs.png"/>
+			</span>
+		</section>
+
+		<section id="tedxuw">
+			<span class="container">
+				<a href="https://www.tedxuw.com/" target="_blank">
+					<h2>TEDxUW</h2>
+					<h5>Head of Web and UX</h5>
+					<p>Showcasing the amazing and inspiring individuals of Waterloo</p>
+					<div class="button">Visit tedxuw.com</div>
+				</a>
+				<img src="./assets/projects/tedxuw.png"/>
+			</span>
+		</section>
+
+		<section id="htn">
+			<span class="container">
+				<a href="https://hackthenorth.com/" target="_blank">
+					<h2>Hack the North</h2>
+					<h5>Organizer</h5>
+					<p>Bringing 1,500 students together at Canada's biggest hackathon to build something incredible in just 36 hours</p>
+					<div class="button">Visit hackthenorth.com</div>
+				</a>
+				<img src="./assets/projects/htn.png"/>
+			</span>
+		</section>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var window_height = $(window).height();
+				$(window).scroll(function() {
+					var scrollMiddle = $(window).scrollTop() + window_height/2;
+					$('section').each(function(e) {
+						elTop = $(this).offset().top;
+						elBtm = elTop + $(this).height();
+						if (elTop < scrollMiddle && elBtm > scrollMiddle - 200) {
+							$(this).addClass(this.id + '_hover');
+							$('#' + this.id + ' img').css('transform', 'rotateY(-10deg) rotateX(10deg) rotateZ(1deg) scale(1)');
+						} else {
+							$(this).removeClass(this.id + '_hover');
+							$('#' + this.id + ' img').css('transform', 'rotateY(0) rotateX(0) rotateZ(0) scale(1)');
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>
