@@ -207,6 +207,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
 	  color: #3D93F6;
+	  font-weight: 600;
 	  transition: opacity 0.2s; }
 a:hover {
   	opacity: 0.6; }

@@ -116,17 +116,16 @@
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$(document).ready(function(){
-					$('.photos').slick({
-						lazyLoaded: $('.photos').fadeIn(),
-						autoplay: true,
-						fade: true,
-  						autoplaySpeed: 1000,
-						arrows: false,
-						speed: 3000,
-						cssEase: 'cubic-bezier(.4,0,.2,1)',
-						infinite: true,
-					});
+				$('body').fadeIn();
+				$('.photos').slick({
+					lazyLoaded: $('.photos').fadeIn(),
+					autoplay: true,
+					fade: true,
+					autoplaySpeed: 1000,
+					arrows: false,
+					speed: 3000,
+					cssEase: 'cubic-bezier(.4,0,.2,1)',
+					infinite: true,
 				});
 			});
 		</script>
