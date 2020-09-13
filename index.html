@@ -62,65 +62,93 @@
 			</span>
 		</nav>
 
-		<section id="flow" class="flow_hover">
-			<span class="container">
-				<a href="./flow">
-					<h2>UW Flow 2.0</h2>
-					<h5>Designer and Developer</h5>
-					<p>Improving the way university students review courses and professors</p>
-					<div class="button">Read the case study</div>
-				</a>
-				<img src="./assets/projects/flow.png" style="box-shadow: none" />
-			</span>
-		</section>
+		<main>
+			<section id="flow" class="flow_hover">
+				<span class="container">
+					<a href="./flow">
+						<h2>UW Flow</h2>
+						<p>Improving the way university students review courses and professors</p>
+						<div class="button">Read article</div>
+					</a>
+					<img src="./assets/projects/flow.png" style="box-shadow: none" />
+				</span>
+			</section>
+	
+			<section id="cc">
+				<span class="container">
+					<a href="https://observablehq.com/@derrekchow" target="_blank">
+						<h2>Creative Coding</h2>
+						<p>Explorations in art + technology</p>
+						<div class="button">Explore on Observable ↗</div>
+					</a>
+					<img src="./assets/projects/cc.png"/>
+				</span>
+			</section>
 
-		<section id="fti">
-			<span class="container">
-				<a href="./fti">
-					<h2>From the Intercom</h2>
-					<h5>Designer</h5>
-					<p>Championing Asian/Anglo-Asian art in entertainment</p>
-					<div class="button">Learn more</div>
-				</a>
-				<img src="./assets/projects/fti.png"/>
-			</span>
-		</section>
+			<section id="hacks">
+				<span class="container">
+					<a href="https://github.com/derrekchow" target="_blank">
+						<h2>Hacks</h2>
+						<p>Hardware and software experiments</p>
+						<div class="button">Explore on Github ↗</div>
+					</a>
+					<img src="./assets/projects/hacks.png"/>
+				</span>
+			</section>
+	
+			<section id="fti">
+				<span class="container">
+					<a href="./fti">
+						<h2>From the Intercom</h2>
+						<p>Championing Asian/Anglo-Asian art in entertainment</p>
+						<div class="button">Read article</div>
+					</a>
+					<img src="./assets/projects/fti.png"/>
+				</span>
+			</section>
+	
+			<div id="orgs">
+				<section id="impact">
+					<span class="container">
+						<a href="https://www.impactlabs.io/" target="_blank">
+							<h2>Impact Labs</h2>
+							<h5>Dev Team Lead</h5>
+							<p>Inspiring and empowering ambitious computer scientists to build a better world</p>
+							<div class="button">Visit impactlabs.io ↗</div>
+						</a>
+						<img src="./assets/projects/impact_labs.png"/>
+					</span>
+				</section>
+		
+				<section id="tedxuw">
+					<span class="container">
+						<a href="http://2018.tedxuw.com/" target="_blank">
+							<h2>TEDxUW</h2>
+							<h5>Head of Web and UX</h5>
+							<p>Showcasing the amazing and inspiring individuals of Waterloo</p>
+							<div class="button">Visit tedxuw.com ↗</div>
+						</a>
+						<img src="./assets/projects/tedxuw.png"/>
+					</span>
+				</section>
+		
+				<section id="htn">
+					<span class="container">
+						<a href="https://hackthenorth.com/" target="_blank">
+							<h2>Hack the North</h2>
+							<h5>Organizer</h5>
+							<p>Bringing 1,500 students together at Canada's biggest hackathon to build something incredible in just 36 hours</p>
+							<div class="button">Visit hackthenorth.com ↗</div>
+						</a>
+						<img src="./assets/projects/htn.png"/>
+					</span>
+				</section>
+			</div>
 
-		<section id="impact">
-			<span class="container">
-				<a href="https://www.impactlabs.io/" target="_blank">
-					<h2>Impact Labs</h2>
-					<h5>Dev Team Lead</h5>
-					<p>Inspiring and empowering ambitious computer scientists to build a better world</p>
-					<div class="button">Visit impactlabs.io</div>
-				</a>
-				<img src="./assets/projects/impact_labs.png"/>
-			</span>
-		</section>
-
-		<section id="tedxuw">
-			<span class="container">
-				<a href="http://2018.tedxuw.com/" target="_blank">
-					<h2>TEDxUW</h2>
-					<h5>Head of Web and UX</h5>
-					<p>Showcasing the amazing and inspiring individuals of Waterloo</p>
-					<div class="button">Visit tedxuw.com</div>
-				</a>
-				<img src="./assets/projects/tedxuw.png"/>
-			</span>
-		</section>
-
-		<section id="htn">
-			<span class="container">
-				<a href="https://hackthenorth.com/" target="_blank">
-					<h2>Hack the North</h2>
-					<h5>Organizer</h5>
-					<p>Bringing 1,500 students together at Canada's biggest hackathon to build something incredible in just 36 hours</p>
-					<div class="button">Visit hackthenorth.com</div>
-				</a>
-				<img src="./assets/projects/htn.png"/>
-			</span>
-		</section>
+			<div id="show-orgs" align="center">
+				<h1 class="button" style="color:white">Show organizations ▼</h1>
+			</div>
+		</main>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -140,6 +168,18 @@
 							$('#' + this.id + ' img').css('transform', 'rotateY(0) rotateX(0) rotateZ(0) scale(1)');
 						}
 					});
+				});
+
+				$('#orgs').hide();
+
+				$('#show-orgs').click(function() {
+					if ($('#orgs').is(":visible")) {
+						$('#show-orgs h1').text('Show organizations ▼');
+					}
+					else {
+						$('#show-orgs h1').text('Hide organizations ▲');
+					}
+					$('#orgs').slideToggle();
 				});
 			});
 		</script>
