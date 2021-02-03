@@ -16,7 +16,7 @@ $transition: cubic-bezier(0.4,0,0.2,1);
 }
 
 html {
-	font-size: 12px;
+	font-size: 9px;
 }
 
 body {
@@ -26,7 +26,11 @@ body {
 
 	h1 {
 		margin-top: 2em;
-	}
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: 1px;
+    }
 
 	.button {
 		transition: 0.3s $transition;
@@ -222,14 +226,14 @@ nav {
 			margin-bottom: 10px;
 		}
 		.description {
-			font-size: 28px;
+			font-size: 24px;
 			opacity: 0.7;
 			padding: 1.5em 0;
 		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: $black;
+        color: $black;
 		margin-bottom: 0.5em;
 	}
 
@@ -260,7 +264,7 @@ nav {
 			outline: none;
 		}
 		img {
-			height: 40vh;
+			height: 150px;
 			width: auto;
 			box-shadow: $box-shadow;
 		}
@@ -298,10 +302,19 @@ nav {
 }
 
 #more {
-	#title {
-		margin-top: 2em;
-	}
+    
 	ul {
 		list-style: none;
-	}
+    }
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 2.5em;
+        width: 80px;
+    }
+    p {
+        text-align: justify;
+    }
 }
